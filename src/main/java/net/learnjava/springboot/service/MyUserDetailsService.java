@@ -1,4 +1,4 @@
-package net.learnjava.springboot;
+package net.learnjava.springboot.service;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
