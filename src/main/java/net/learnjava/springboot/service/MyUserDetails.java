@@ -23,16 +23,19 @@ public class MyUserDetails implements  UserDetails{
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		// temporary passing some constant values
-		return Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
+		return Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"),
+				new SimpleGrantedAuthority("ROLE_ADMIN"));
 	}
 
 	@Override
 	public String getPassword() {
+		System.out.println("pass");
 		return "pass"; //temporary hardcoded
 	}
 
 	@Override
 	public String getUsername() {
+		System.out.println("userName: "+userName);
 		return userName;
 	}
 
